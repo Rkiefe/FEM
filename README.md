@@ -10,11 +10,11 @@ The final goal of this project is to simulate the magnetic field of a solid meta
 Simulate the magnetic field of solids.
 
 As such, starting from a simpler situation than a dynamic one, results in tackling magnetostatics. The 2 equations that govern such system are:
-$$ \nabla \cdot \vec{B} = 0 $$
+$$\nabla \cdot \vec{B} = 0$$
 And
-$$ \nabla \times \vec{H} = \vec{j} $$
+$$\nabla \times \vec{H} = \vec{j}$$
 
-Which using the Coulomb Gauge and the usual vector potential results in, $ \nabla \times ( \nabla \times \vec{A} ) = \mu \vec{j} $
+Which using the Coulomb Gauge and the usual vector potential results in, $\nabla \times ( \nabla \times \vec{A} ) = \mu \vec{j}$
 
 #### Current Status
 Able to solve the *Poisson* equation for the 1D case. This is equivelent to obtaining the displacement of an elastic rod over its length (the bend). The program uses Robin boundary conditions, meaning we take as input the displacement at the ends of the rod and its spring constant in each end, allowing a more general system to be simulated.
