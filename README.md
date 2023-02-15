@@ -14,7 +14,10 @@ $$\nabla \cdot \vec{B} = 0$$
 And
 $$\nabla \times \vec{H} = \vec{j}$$
 
-Which using the Coulomb Gauge and the usual vector potential results in, $\nabla \times ( \nabla \times \vec{A} ) = \mu \vec{j}$
+Which using the Coulomb Gauge $\nabla \cdot \vec{A} = 0$ and the usual vector potential $\vec{A}$, the two equations result in one: $\nabla \times ( \nabla \times \vec{A} ) = \mu \vec{j}$, which can be further simplified into:
+$$-\nabla ^2 \vec{A} = \mu \vec{j}$$
+
+Each component of A has its own Poisson equation. So a 1D system is simpler to start constructing the code for, and only after testing for that simpler case, move on to the two dimensional problem.
 
 #### Current Status
 Able to solve the *Poisson* equation for the 1D case. This is equivelent to obtaining the displacement of an elastic rod over its length (the bend). The program uses Robin boundary conditions, meaning we take as input the displacement at the ends of the rod and its spring constant in each end, allowing a more general system to be simulated.
