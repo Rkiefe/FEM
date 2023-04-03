@@ -14,14 +14,14 @@ $$\nabla \cdot \vec{B} = 0$$
 And
 $$\nabla \times \vec{H} = \vec{j}$$
 While the two are related by
-$$ \vec{B} = \mu \vec{H} $$
+$$\vec{B} = \mu \vec{H}$$
 
 Using the vector potential formulation $ \vec{\Nabla} \times \vec{A} = \vec{B} $
 
 and the Coulomb Gauge $\nabla \cdot \vec{A} = 0$, the equations result in: $\nabla \times ( 1/\mu \nabla \times \vec{A} ) = \vec{j}$, which can be further simplified into:
 $$-\nabla \cdot (1/\mu \nabla \vec{A}) = \vec{j}$$
 
-In 2D, $ \vec{A} = A(x,y) \vec{e_z} $ makes the gauging immediatly valid.
+In 2D, $\vec{A} = A(x,y) \vec{e_z}$ makes the gauging immediatly valid.
 
 Each component of A has its own Poisson equation. So a 1D system is simpler to start constructing the code for, and only after testing for that simpler case, move on to the two dimensional problem.
 
