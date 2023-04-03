@@ -16,7 +16,7 @@ $$\nabla \times \vec{H} = \vec{j}$$
 While the two are related by
 $$\vec{B} = \mu \vec{H}$$
 
-Using the vector potential formulation $ \vec{\Nabla} \times \vec{A} = \vec{B} $
+Using the vector potential formulation $\vec{\Nabla} \times \vec{A} = \vec{B}$
 
 and the Coulomb Gauge $\nabla \cdot \vec{A} = 0$, the equations result in: $\nabla \times ( 1/\mu \nabla \times \vec{A} ) = \vec{j}$, which can be further simplified into:
 $$-\nabla \cdot (1/\mu \nabla \vec{A}) = \vec{j}$$
