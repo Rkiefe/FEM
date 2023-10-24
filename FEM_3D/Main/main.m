@@ -174,7 +174,7 @@ out = FEM3D_linear(model,p,t,surfaceT,surface2element,Hext,direction);
 %% Plot vector field
 H = out.H;
 B = out.B;
-pc = out.pc;
+pc = out.centerCoord;
 InsideElements = out.InsideElements;
 
 Hplot = figure;
