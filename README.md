@@ -18,11 +18,11 @@ $$\vec{B} = \mu \vec{H}$$
 
 Using the vector potential formulation $\nabla \times \vec{A} = \vec{B}$
 
-and the Coulomb Gauge $\nabla \cdot \vec{A} = 0$, the equations result in: $\nabla \times ( 1/\mu \nabla \times \vec{A} ) = \vec{j}$, which can be further simplified into:
-$$-\nabla \cdot (1/\mu \nabla \vec{A}) = \vec{j}$$
+the equations result in: $\nabla \times ( 1/\mu \nabla \times \vec{A} ) = \vec{j}$, which can be further simplified by using the Coulomb Gauge $\nabla \cdot \vec{A} = 0$:
+$$-\nabla \cdot (1/\mu \nabla \vec{A}) = \vec{j}$$ (set of Poisson equations)
 
-In 2D, $\vec{A} = A(x,y) \vec{e_z}$ makes the gauging immediatly valid.
+In 2D, $\vec{A} = A(x,y) \vec{e_z}$ makes the gauging used immediatly valid.
 
-Each component of A has its own Poisson equation. So a 1D system is simpler to start constructing the code for, and only after testing for that simpler case, move on to the two dimensional problem.
+Each component of A has its own Poisson equation. So a 1D system is simpler to start constructing the code for, and only after testing for that simpler case, move on to the two dimensional problem, and eventually solve 3D systems.
 
-The 1D case is fairly similar to the deformation of a bar and the code for such an example is present in this repository.
+The deformation of a bar can be described by the Poisson equation in 1D, so it was used to first try an implementation of FEM for a simple case. There are analytical solutions depending on the external force used. After Achieving good results, the 2D case was tackled: Magnetostatics. When the permeability is linear, we have $$- 1/\mu \nabla^2  A = j$$. When its not, we have the previous form of the equation with the divergent of the gradient.
