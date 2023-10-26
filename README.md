@@ -7,7 +7,7 @@ It goes from the very start of the process, from the variational form of the dif
 The final goal of this project is to create a simulation software similar to COMSOL or Ansys, where the user can simulate magnetic fields for materials with non linear magnetic behaviour, heat transfer with temeperature dependent conductivity and more, both in 2D and 3D.
 
 ### Magnetic fields
-Considering magnetostatics, the 2 equations that govern such system are:
+Considering magnetostatics, the 2 equations that govern the system are:
 $$\nabla \cdot \vec{B} = 0$$
 And
 $$\nabla \times \vec{H} = \vec{j}$$
