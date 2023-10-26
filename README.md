@@ -4,12 +4,10 @@ Finite Element Method from scratch
 This repository is dedicated to creating a simulation of different systems using the Finite Element Method.
 It goes from the very start of the process, from the variational form of the differential equation, all the way to the actual programming required to output a result. The main language used is MATLAB but it can be transposed to others such as Python or C.
 
-The final goal of this project is to simulate the magnetic field of a solid metal with the most general boundary conditions possible in 2D. There are already free software available for this purpose such as FreeFEM or the FEMM, but my objective is to create a program from start to finish including mesh creation.
+The final goal of this project is to create a simulation software similar to COMSOL or Ansys, where the user can simulate magnetic fields for materials with non linear magnetic behaviour, heat transfer with temeperature dependent conductivity and more, both in 2D and 3D.
 
-### Goal
-Simulate the magnetic field of solids.
-
-The 2 equations that govern such system are:
+### Magnetic fields
+Considering magnetostatics, the 2 equations that govern such system are:
 $$\nabla \cdot \vec{B} = 0$$
 And
 $$\nabla \times \vec{H} = \vec{j}$$
