@@ -4,7 +4,7 @@ Finite Element Method from scratch
 This repository is dedicated to creating a simulation of different systems using the Finite Element Method.
 It goes from the very start of the process, from the variational form of the differential equation, all the way to the actual programming required to output a result. The main language used is MATLAB but it can be transposed to others such as Python or C.
 
-The final goal of this project is to create a simulation software similar to COMSOL or Ansys, where the user can simulate magnetic fields for materials with non linear magnetic behaviour, heat transfer with temeperature dependent conductivity and more, both in 2D and 3D.
+The final goal of this project is to create a simulation software similar to COMSOL or Ansys, where the user can simulate magnetic fields for materials with non linear magnetic behaviour, heat transfer with temperature dependent conductivity and more, both in 2D and 3D.
 
 ### Magnetic fields
 Considering magnetostatics, the 2 equations that govern the system are:
