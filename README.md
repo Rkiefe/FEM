@@ -19,8 +19,10 @@ Using the vector potential formulation $\nabla \times \vec{A} = \vec{B}$
 the equations result in: $\nabla \times ( 1/\mu \nabla \times \vec{A} ) = \vec{j}$, which can be further simplified by using the Coulomb Gauge $\nabla \cdot \vec{A} = 0$:
 $$-\nabla \cdot (1/\mu \nabla \vec{A}) = \vec{j}$$ (set of Poisson equations)
 
-In 2D, $\vec{A} = A(x,y) \vec{e_z}$ makes the gauging used immediatly valid.
+In 2D, $\vec{A} = A(x,y) \vec{e_z}$ makes the gauging used immediatly valid. Each component of A has its own Poisson equation.
 
-Each component of A has its own Poisson equation. So a 1D system is simpler to start constructing the code for, and only after testing for that simpler case, move on to the two dimensional problem, and eventually solve 3D systems.
+### The Poisson Equation and you
+The deformation of a bar can be described by the Poisson equation in 1D, so it was used to first try an implementation of FEM for a simple case. There are analytical solutions depending on the external force used. After Achieving good results, the 2D magnetostatics problem mentioned above was up next. Additionally in 2D, the steady-state heat equation is also a poisson equation! 
 
-The deformation of a bar can be described by the Poisson equation in 1D, so it was used to first try an implementation of FEM for a simple case. There are analytical solutions depending on the external force used. After Achieving good results, the 2D case was tackled: Magnetostatics. When the permeability is linear, we have $$- 1/\mu \nabla^2  A = j$$. When its not, we have the previous form of the equation with the divergent of the gradient.
+## Solvign 2D magnetostatic problems
+Magnetic materials can be described by their magnetic permeability - how easy is it for the magnetic field to magnetize the object, or you can think of it as how easy it is for the external magnetic field to want to be in the region occupied by the material. When the permeability is linear, we have $$- 1/\mu \nabla^2  A = j$$. When its not, we have the previous form of the equation with the divergent of the gradient. In this repository you have the 2D and 3D magnetostatic non-linear problem solved for finding the magnetic field H when a magnetizable material of random shape is present.
