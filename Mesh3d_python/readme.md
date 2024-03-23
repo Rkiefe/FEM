@@ -6,8 +6,7 @@ It takes a "sample.stl" file and generates the 3d tetrahedral mesh of that objec
 ## Requirements
 It only needs pyvista and tetgen. Both can be installed using pip,
 ```shell
-pip install pyvista
-pip install tetgen
+pip install pyvista && pip install tetgen
 ```
 
 ### Notes
